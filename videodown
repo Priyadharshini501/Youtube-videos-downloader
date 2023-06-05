@@ -1,0 +1,8 @@
+import pytube
+import os
+
+url="https://www.youtube.com/watch?v=Hy-QdKcW2Cg"
+video=pytube.YouTube(url)
+print("Downloading....")
+video.streams.get_highest_resolution().download(r'C:\Users\Admin\Downloads\\')
+print("Done")
